@@ -1,0 +1,188 @@
+/////////////Hamster////////////////
+class Hamster { 
+  constructor (owner, petName) {
+
+   this.owner = owner;
+   this.petName = petName;
+   this.price = 15;
+ 
+  }
+    wheelRun(){
+    console.log('squeak squeak')
+    }
+    eatFood(){
+    console.log('nibble nibble')
+    }
+    getPrice(){
+    return this.price
+    }
+  }
+
+    const gerry = new Hamster("Coco", "Sniffles");
+
+/////////////Person///////////////
+
+class Person { 
+  constructor (name) {
+
+   this.name = name;
+   this.age = 0;
+   this.height = 0;
+   this.weight = 15;
+   this.mood = 0;
+   this.hamsters = [];
+   this.bankAccount = 0;
+ 
+  }
+    getName(){
+      return this.name
+    }
+    getAge(){
+      return this.age
+    }
+    getWeight(){
+    return this.weight
+    }
+    greet(){
+      console.log(`Hello ${this.name}`)
+      }
+    eat(){
+     this.weight++;
+     this.mood++;
+      }
+    exercise(){
+      this.weight--;
+      }
+    ageUp(){
+      this.age++;
+      this.height++;
+      this.weight++;
+      this.mood--;
+      this.bankAccount += 10;
+        }
+    buyHamster(petName){
+      let hamster = new Hamster (this.name, petName)
+      this.mood += 10;
+      this.bankAccount -= gerry.getPrice();
+      this.hamsters.push(hamster)
+    }
+        
+      
+  }
+
+ ///////////Q1//////////////
+const timmy = new Person("Timmy");
+
+
+ ///////////Q2//////////////
+ timmy.ageUp();
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp();
+ 
+ ///////////Q3//////////////
+
+ timmy.eat();
+ timmy.eat();
+ timmy.eat();
+ timmy.eat();
+ timmy.eat();
+
+ ///////////Q4//////////////
+
+ timmy.exercise();
+ timmy.exercise(); 
+ timmy.exercise(); 
+ timmy.exercise(); 
+ timmy.exercise();
+
+ ///////////Q5//////////////
+
+ timmy.ageUp();
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp();
+ timmy.ageUp();
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+
+ 
+
+ ///////////Q6//////////////
+
+ const Gus = new Hamster
+
+ ///////////Q7//////////////
+
+ const Gus = new Hamster("Timmy", "Gus")
+ ///////////Q8//////////////
+
+ timmy.buyHamster("Gus");
+ ///////////Q9//////////////
+ timmy.ageUp();
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp();
+ timmy.ageUp();
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp();
+ timmy.ageUp();
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp(); 
+ timmy.ageUp();
+ 
+
+ ///////////Q10//////////////
+
+ timmy.eat();
+ timmy.eat();
+
+ ///////////Q11//////////////
+ timmy.exercise();
+ timmy.exercise(); 
+
+///////Chef Make Dinners ///////////
+
+class Dinner {
+  constructor(type, appetizer, entree, dessert) {
+    this.type = type;
+    this.appetizer = appetizer;
+    this. entree = entree; 
+    this.dessert = dessert;
+  } 
+}
+class Chef {
+  constructor (meal) {
+    this.meal = meal;
+    this.allMeals = [];
+  }
+  newMeal (appetizer, entree, dessert) {
+    const hotMeal = new dinner
+    this.allMeals.push(hotMeal);
+  }
+  whatsForDinner () {
+    for 
+    (let preference of this.allMeals) {
+      console.log(preference)
+    }
+}
+}
+
+let halalDinner = new Chef("Indian")
+let lightDinner = new Chef("Mediterranean")
+let heavyDinner = new Chef("Southern Meal")
+
+halalDinner.makeNewMeal('Falafel', 'Tikka Masala', 'Baklava');
+lightDinner.makeNewMeal('Dolmas', 'Spinach Pie', 'Chocolate chip cookie');
+heavyDinner.makeNewMeal('Potato Soup', 'Beef Ribs', 'Brownie Sundae');
+
+whatsForDinner();
+whatsForDinner();
+whatsForDinner();
